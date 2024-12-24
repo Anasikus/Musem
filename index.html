@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./src/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="./src/img/logo.png">
+    <script type="module" src="./src/js/script.js"> </script>
+    <title>Yakuipt</title>
+</head>
+
+<body>
+    <div class="header">
+        <div><img src="./src/img/logo.png" alt="Логотип"></div>
+        <div class="headerText">ГПОУ ЯО ЯРОСЛАВСКИЙ КОЛЛЕДЖ УПРАВЛЕНИЯ И ПРОФЕССИОНАЛЬНЫХ ТЕХНОЛОГИЙ</div>
+    </div>
+    <div class="schemaBack">
+        <div class="buttonGroup">
+            <button class="topButton">1 Этаж</button>
+            <button class="topButton">2 Этаж</button>
+            <button class="topButton">3 Этаж</button>
+            <button class="topButton">4 этаж</button>
+            <button class="topButton">Условные обозначения</button>
+        </div>
+        <div class="svgContainer"></div>
+        <div class="bottomRow">
+            <p class="schemaText">Более подробнее о колледже, можете посмотреть видео:</p>
+            <button id="watchVideoButton" class="button">Посмотреть видео</button>
+        </div>
+        <div id="videoModal" class="overlay" style="display: none;">
+            <div class="window">
+                <div class="close" id="closeVideoModal">&times;</div>
+                <div class="video-container">
+                    <iframe id="videoFrame" width="1200" height="800" src="" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>        
+    </div> 
+</body>
+</html>
